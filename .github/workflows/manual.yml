@@ -14,7 +14,7 @@ on:
 jobs:
   # This workflow contains a single job called "greet"
   deploy:
-    # The type of runner that the job will run on
+    # The type of runner that the job will run o 
      runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -26,5 +26,5 @@ jobs:
           host: ${{ secrets.HOST }}
           username:  ${{ secrets.USER }}
           key:  ${{ secrets.KEY }}
-          port:  ${{ secrets.PORT }}
-      script: 'cd /var/www/html/aws-code-pipeline-code-deploye && sudo git pull'
+          port:  ${{ secrets.PORT }}  
+          script: 'cd /var/www/html/aws-code-pipeline-code-deploye && sudo git pull'
