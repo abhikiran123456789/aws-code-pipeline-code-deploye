@@ -27,4 +27,4 @@ jobs:
           username:  ${{ secrets.USER }}
           key:  ${{ secrets.KEY }}
           port:  ${{ secrets.PORT }}
-       script: ' cd /var/www/html/aws-code-pipeline-code-deploye && sudo git pull '
+      script: 'cd /var/www/html/aws-code-pipeline-code-deploye && sudo git pull'
